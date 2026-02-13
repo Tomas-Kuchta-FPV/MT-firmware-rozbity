@@ -28,6 +28,7 @@ Different NicheGraphics UIs and different hardware variants will each have their
 #include "graphics/niche/InkHUD/Applets/User/Positions/PositionsApplet.h"
 #include "graphics/niche/InkHUD/Applets/User/RecentsList/RecentsListApplet.h"
 #include "graphics/niche/InkHUD/Applets/User/ThreadedMessage/ThreadedMessageApplet.h"
+#include "graphics/niche/InkHUD/Applets/User/Telemetry/TelemetryApplet.h"
 
 // Shared NicheGraphics components
 // --------------------------------
@@ -85,6 +86,7 @@ void setupNicheGraphics()
     inkhud->addApplet("Channel 1", new InkHUD::ThreadedMessageApplet(1));        // -
     inkhud->addApplet("Positions", new InkHUD::PositionsApplet, true);           // Activated
     inkhud->addApplet("Recents List", new InkHUD::RecentsListApplet);            // -
+    inkhud->addApplet("Telemetry", new InkHUD::TelemetryApplet);                 // -
     inkhud->addApplet("Heard", new InkHUD::HeardApplet, true, false, 0);         // Activated, not autoshown, default on tile 0
 
     // Start running InkHUD
