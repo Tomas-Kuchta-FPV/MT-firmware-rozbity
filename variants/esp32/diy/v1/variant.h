@@ -2,12 +2,12 @@
 #define I2C_SDA 21
 #define I2C_SCL 22
 
-// GPS
-#undef GPS_RX_PIN
-#undef GPS_TX_PIN
-#define GPS_RX_PIN 12
-#define GPS_TX_PIN 15
-#define GPS_UBLOX
+// GPS - commented out to disable GPS
+//#undef GPS_RX_PIN
+//#undef GPS_TX_PIN
+//#define GPS_RX_PIN 12
+//#define GPS_TX_PIN 15
+//#define GPS_UBLOX
 
 #define BUTTON_PIN 39  // The middle button GPIO on the T-Beam
 #define BATTERY_PIN 35 // A battery voltage measurement pin, voltage divider connected here to measure battery voltage
